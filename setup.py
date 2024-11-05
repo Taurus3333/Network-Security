@@ -4,8 +4,8 @@ distributing Python projects. It is used by setuptools
 (or distutils in older Python versions) to define the configuration 
 of your project, such as its metadata, dependencies, and more
 '''
-import setuptools
-from setuptools import find_packages,setup
+import setuptools # type: ignore
+from setuptools import find_packages,setup # type: ignore
 from typing import List
 
 def get_requirements()->List[str]:
